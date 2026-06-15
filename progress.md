@@ -1,0 +1,83 @@
+# Google AI Agents Intensive Course Progress Tracker
+
+This document tracks my progress through the 5-Day Intensive course.
+
+---
+
+## 🎒 Day 1: Introduction to Agents & Vibe Coding
+Theme: Transitioning from manual syntax coding to intent-driven development and agentic engineering.
+
+- [x] Onboarding & Setup
+  - [x] Create Kaggle Account
+  - [x] Create Google AI Studio Account & API Key
+  - [x] Install Antigravity 2.0
+  - [x] Install Antigravity IDE
+  - [x] Install Antigravity CLI
+  - [x] Join Kaggle Discord Server
+- [/] Assignments
+  - [ ] Listen to summary podcast episode: [Unit 1 Podcast](https://www.youtube.com/watch?v=cbzmr7vt4XA)
+  - [ ] Read "The New SDLC with Vibe Coding" whitepaper: [Kaggle Whitepaper](https://www.kaggle.com/whitepaper-the-new-SDLC-with-vibe-coding)
+- [/] Codelabs
+  - [x] Get started with Antigravity 2.0 and IDE (Completed - currently using Antigravity 2.0 agent)
+  - [/] Build a Web Application in AI Studio and Deploy to Cloud Run (In Progress - building local prototype)
+- [ ] Livestream & AMAs
+  - [ ] Attend Livestream Day 1 on YouTube (Monday, June 15th at 11:00 AM PT)
+
+---
+
+## 🎒 Day 2: Agent Tools & Interoperability
+Theme: Interacting with external APIs, code execution, and multi-agent setups.
+
+- [ ] Assignments
+  - [ ] Listen to summary podcast episode
+  - [ ] Read Day 2 whitepaper
+- [ ] Codelabs
+  - [ ] Connect agents to APIs & execute code
+- [ ] Livestream & AMAs
+  - [ ] Attend Livestream Day 2 on YouTube (Tuesday, June 16th at 11:00 AM PT)
+
+---
+
+## 🎒 Day 3: Agent Skills
+Theme: Building memory, managing long contexts, and agentic skills.
+
+- [ ] Assignments
+  - [ ] Listen to summary podcast episode
+  - [ ] Read Day 3 whitepaper
+- [ ] Codelabs
+  - [ ] Build skilled agents with memory
+- [ ] Livestream & AMAs
+  - [ ] Attend Livestream Day 3 on YouTube (Wednesday, June 17th at 11:00 AM PT)
+
+---
+
+## 🎒 Day 4: Vibe Coding Agent Security and Evaluation
+Theme: Rigorous testing, security guardrails, and quality evaluations.
+
+- [ ] Assignments
+  - [ ] Listen to summary podcast episode
+  - [ ] Read Day 4 whitepaper
+- [ ] Codelabs
+  - [ ] Implement evaluation and testing harnesses
+- [ ] Livestream & AMAs
+  - [ ] Attend Livestream Day 4 on YouTube (Thursday, June 18th at 11:00 AM PT)
+
+---
+
+## 🎒 Day 5: Spec-Driven Production Grade Development
+Theme: Cloud deployment, fleet governance, debugging, and observability.
+
+- [ ] Assignments
+  - [ ] Listen to summary podcast episode
+  - [ ] Read Day 5 whitepaper
+- [ ] Codelabs
+  - [ ] Deploy and monitor production-grade agents
+- [ ] Livestream & AMAs
+  - [ ] Attend Livestream Day 5 on YouTube (Friday, June 19th at 11:00 AM PT)
+
+---
+
+## 🏆 Capstone Project
+- [ ] Build and document an autonomous AI agent
+- [ ] Record video explanation and write summary
+- [ ] Submit project link on Kaggle (Deadline: July 6, 2026, 11:59 PM PT)
