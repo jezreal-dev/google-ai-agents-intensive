@@ -31,10 +31,9 @@ google-ai-agents-intensive/
 ├── progress.md             # Interactive checklist for course requirements
 ├── day1_notes.md           # Unit 1: Podcast and Whitepaper summaries
 │
-└── codelab-app/            # Day 1 Codelab: Web app prototype
-    ├── index.html          # Web page dashboard structure
-    ├── index.css           # Custom snowflakes and balloons animations
-    └── index.js            # Interactive trigger and cleanup logic
+├── index.html              # Web page dashboard structure (deployed to root)
+├── index.css               # Custom snowflakes and balloons animations
+└── index.js                # Interactive trigger and cleanup logic
 ```
 
 ---
@@ -42,6 +41,7 @@ google-ai-agents-intensive/
 ## 🛠️ Getting Started
 
 To view the Day 1 prototype web application:
-1. Navigate into the `codelab-app` directory.
+1. Open the repository root.
 2. Launch a local web server (e.g., Python `http.server` or VS Code Live Server).
-3. Open the application in your browser to test the interactive falling snowflakes and rising balloons!
+3. Open the root URL in your browser to test the interactive falling snowflakes and rising balloons!
+

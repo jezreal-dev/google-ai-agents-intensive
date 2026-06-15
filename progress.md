@@ -17,9 +17,9 @@ Theme: Transitioning from manual syntax coding to intent-driven development and 
 - [/] Assignments
   - [ ] Listen to summary podcast episode: [Unit 1 Podcast](https://www.youtube.com/watch?v=cbzmr7vt4XA)
   - [ ] Read "The New SDLC with Vibe Coding" whitepaper: [Kaggle Whitepaper](https://www.kaggle.com/whitepaper-the-new-SDLC-with-vibe-coding)
-- [/] Codelabs
+- [x] Codelabs
   - [x] Get started with Antigravity 2.0 and IDE (Completed - currently using Antigravity 2.0 agent)
-  - [/] Build a Web Application in AI Studio and Deploy to Cloud Run (In Progress - building local prototype)
+  - [x] Build a Web Application in AI Studio and Deploy to Cloud Run (Completed - deployed to GitHub Pages)
 - [ ] Livestream & AMAs
   - [ ] Attend Livestream Day 1 on YouTube (Monday, June 15th at 11:00 AM PT)
 
