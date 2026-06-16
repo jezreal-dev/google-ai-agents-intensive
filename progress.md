@@ -14,26 +14,27 @@ Theme: Transitioning from manual syntax coding to intent-driven development and 
   - [x] Install Antigravity IDE
   - [x] Install Antigravity CLI
   - [x] Join Kaggle Discord Server
-- [/] Assignments
-  - [ ] Listen to summary podcast episode: [Unit 1 Podcast](https://www.youtube.com/watch?v=cbzmr7vt4XA)
-  - [ ] Read "The New SDLC with Vibe Coding" whitepaper: [Kaggle Whitepaper](https://www.kaggle.com/whitepaper-the-new-SDLC-with-vibe-coding)
+- [x] Assignments
+  - [x] Listen to summary podcast episode: [Unit 1 Podcast](https://www.youtube.com/watch?v=cbzmr7vt4XA)
+  - [x] Read "The New SDLC with Vibe Coding" whitepaper: [Kaggle Whitepaper](https://www.kaggle.com/whitepaper-the-new-SDLC-with-vibe-coding)
 - [x] Codelabs
   - [x] Get started with Antigravity 2.0 and IDE (Completed - currently using Antigravity 2.0 agent)
   - [x] Build a Web Application in AI Studio and Deploy to Cloud Run (Completed - deployed to GitHub Pages)
-- [ ] Livestream & AMAs
-  - [ ] Attend Livestream Day 1 on YouTube (Monday, June 15th at 11:00 AM PT)
+- [x] Livestream & AMAs
+  - [x] Attend Livestream Day 1 on YouTube (Monday, June 15th at 11:00 AM PT)
 
 ---
 
 ## 🎒 Day 2: Agent Tools & Interoperability
 Theme: Interacting with external APIs, code execution, and multi-agent setups.
 
-- [ ] Assignments
-  - [ ] Listen to summary podcast episode
-  - [ ] Read Day 2 whitepaper
-- [ ] Codelabs
-  - [ ] Connect agents to APIs & execute code
-- [ ] Livestream & AMAs
+- [x] Assignments
+  - [x] Listen to summary podcast episode: [Unit 2 Podcast](https://www.youtube.com/watch?v=GjjKXqxFTOY)
+  - [x] Read Day 2 whitepaper: [Agent Tools & Interoperability](https://www.kaggle.com/whitepaper-agent-tools-and-interoperability)
+- [x] Codelabs
+  - [x] Get started with Antigravity CLI (Completed - documented in `cli_usage.md`)
+  - [x] Explore Google Developer Knowledge MCP server in Google Antigravity (Completed - configured in central `mcp_config.json`)
+- [/] Livestream & AMAs
   - [ ] Attend Livestream Day 2 on YouTube (Tuesday, June 16th at 11:00 AM PT)
 
 ---
