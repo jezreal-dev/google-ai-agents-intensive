@@ -32,7 +32,7 @@ Theme: Interacting with external APIs, code execution, and multi-agent setups.
   - [x] Listen to summary podcast episode: [Unit 2 Podcast](https://www.youtube.com/watch?v=GjjKXqxFTOY)
   - [x] Read Day 2 whitepaper: [Agent Tools & Interoperability](https://www.kaggle.com/whitepaper-agent-tools-and-interoperability)
 - [x] Codelabs
-  - [x] Get started with Antigravity CLI (Completed - documented in `cli_usage.md`)
+  - [x] Get started with Antigravity CLI (Completed - documented in `docs/cli_usage.md`)
   - [x] Explore Google Developer Knowledge MCP server in Google Antigravity (Completed - configured in central `mcp_config.json`)
 - [/] Livestream & AMAs
   - [ ] Attend Livestream Day 2 on YouTube (Tuesday, June 16th at 11:00 AM PT)
@@ -60,7 +60,7 @@ Theme: Rigorous testing, security guardrails, and quality evaluations.
   - [x] Listen to summary podcast episode: [Unit 4 Podcast](https://www.youtube.com/watch?v=Ddz1b8CYPvg)
   - [x] Read Day 4 whitepaper: [Vibe Coding Agent Security and Evaluation](https://www.kaggle.com/whitepaper-vibe-coding-agent-security-and-evaluation)
 - [x] Codelabs
-  - [x] Implement evaluation and testing harnesses (Completed - created `expense_agent.py` and `security_scan.py`)
+  - [x] Implement evaluation and testing harnesses (Completed - created `scripts/expense_agent.py` and `scripts/security_scan.py`)
 - [/] Livestream & AMAs
   - [ ] Attend Livestream Day 4 on YouTube (Thursday, June 18th at 11:00 AM PT)
 

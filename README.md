@@ -10,10 +10,10 @@ This repository contains all my course notes, daily assignment reflections, prog
 
 *   **Day 1: Introduction to Agents & Vibe Coding**
     *   **Topic**: Transition from manual coding syntax to natural language intent ("vibe coding").
-    *   **Deliverables**: [day1_notes.md](file:///C:/Users/USER/.gemini/antigravity/scratch/google-ai-agents-intensive/day1_notes.md) (Notes), Snowflakes & Balloons Web App prototype ([index.html](file:///C:/Users/USER/.gemini/antigravity/scratch/google-ai-agents-intensive/index.html) served at root).
+    *   **Deliverables**: [day1_notes.md](file:///C:/Users/USER/.gemini/antigravity/scratch/google-ai-agents-intensive/notes/day1_notes.md) (Notes), Snowflakes & Balloons Web App prototype ([index.html](file:///C:/Users/USER/.gemini/antigravity/scratch/google-ai-agents-intensive/index.html) served at root).
 *   **Day 2: Agent Tools & Interoperability**
     *   **Topic**: Connecting agents to external APIs, code execution, and multi-agent setups.
-    *   **Deliverables**: [day2_notes.md](file:///C:/Users/USER/.gemini/antigravity/scratch/google-ai-agents-intensive/day2_notes.md) (Notes & central MCP Setup), [cli_usage.md](file:///C:/Users/USER/.gemini/antigravity/scratch/google-ai-agents-intensive/cli_usage.md) (CLI Guidelines), [SECURITY.md](file:///C:/Users/USER/.gemini/antigravity/scratch/google-ai-agents-intensive/SECURITY.md) (Security Policy), and [.github/dependabot.yml](file:///C:/Users/USER/.gemini/antigravity/scratch/google-ai-agents-intensive/.github/dependabot.yml) (Automated Security Updates).
+    *   **Deliverables**: [day2_notes.md](file:///C:/Users/USER/.gemini/antigravity/scratch/google-ai-agents-intensive/notes/day2_notes.md) (Notes & central MCP Setup), [cli_usage.md](file:///C:/Users/USER/.gemini/antigravity/scratch/google-ai-agents-intensive/docs/cli_usage.md) (CLI Guidelines), [SECURITY.md](file:///C:/Users/USER/.gemini/antigravity/scratch/google-ai-agents-intensive/SECURITY.md) (Security Policy), and [.github/dependabot.yml](file:///C:/Users/USER/.gemini/antigravity/scratch/google-ai-agents-intensive/.github/dependabot.yml) (Automated Security Updates).
 *   **Day 3: Agent Skills**
     *   **Topic**: Implementing memory, handling long-context windows, and building modular agentic skills. *(Upcoming)*
 *   **Day 4: Vibe Coding Agent Security and Evaluation**
@@ -36,18 +36,24 @@ google-ai-agents-intensive/
 │       └── hello-world-skill/
 │           └── SKILL.md     # Day 3: Local declarative agent skill definition
 │
+├── docs/
+│   └── cli_usage.md            # Guidelines for using agy CLI and agentapi
+│
+├── notes/
+│   ├── day1_notes.md           # Unit 1: Podcast and Whitepaper summaries
+│   ├── day2_notes.md           # Unit 2: Podcast/Whitepaper notes & local MCP config
+│   ├── day3_notes.md           # Unit 3: Podcast/Whitepaper summaries (Agent Skills)
+│   ├── day4_notes.md           # Unit 4: Podcast/Whitepaper summaries (Security & Eval)
+│   └── emails.md               # Converted raw email announcements
+│
+├── scripts/
+│   ├── expense_agent.py        # Day 4: Expense approval agent featuring HITL
+│   ├── expense_results.json    # Log of expense results
+│   └── security_scan.py        # Day 4: Local threat credential scanner
+│
 ├── README.md               # Course overview & portfolio index
 ├── progress.md             # Interactive checklist for course requirements
 ├── SECURITY.md             # Vulnerability reporting guidelines
-│
-├── day1_notes.md           # Unit 1: Podcast and Whitepaper summaries
-├── day2_notes.md           # Unit 2: Podcast/Whitepaper notes & local MCP config
-├── day3_notes.md           # Unit 3: Podcast/Whitepaper summaries (Agent Skills)
-├── day4_notes.md           # Unit 4: Podcast/Whitepaper summaries (Security & Eval)
-├── cli_usage.md            # Guidelines for using agy CLI and agentapi
-│
-├── expense_agent.py        # Day 4: Expense approval agent featuring HITL
-├── security_scan.py        # Day 4: Local threat credential scanner
 │
 ├── index.html              # Web page dashboard structure (deployed to root)
 ├── index.css               # Custom snowflakes and balloons animations
