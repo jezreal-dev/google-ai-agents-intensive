@@ -1,0 +1,20 @@
+[
+  {
+    "status": "Approved",
+    "amount": 45.5,
+    "description": "Team lunch",
+    "hitl": false
+  },
+  {
+    "status": "Approved",
+    "amount": 250.0,
+    "description": "Cloud server subscription",
+    "hitl": true
+  },
+  {
+    "status": "Approved",
+    "amount": 120.0,
+    "description": "Office chair",
+    "hitl": true
+  }
+]

@@ -42,25 +42,26 @@ Theme: Interacting with external APIs, code execution, and multi-agent setups.
 ## 🎒 Day 3: Agent Skills
 Theme: Building memory, managing long contexts, and agentic skills.
 
-- [ ] Assignments
-  - [ ] Listen to summary podcast episode
-  - [ ] Read Day 3 whitepaper
-- [ ] Codelabs
-  - [ ] Build skilled agents with memory
-- [ ] Livestream & AMAs
-  - [ ] Attend Livestream Day 3 on YouTube (Wednesday, June 17th at 11:00 AM PT)
+- [x] Assignments
+  - [x] Listen to summary podcast episode: [Unit 3 Podcast](https://www.youtube.com/watch?v=uYURYHhpmKc)
+  - [x] Read Day 3 whitepaper: [Agent Skills](https://www.kaggle.com/whitepaper-agent-skills)
+- [x] Codelabs
+  - [x] Explore how Skills work in Antigravity (Completed - created local skill definition)
+  - [x] Build agents in Antigravity with Agents CLI and ADK (Completed)
+- [x] Livestream & AMAs
+  - [x] Attend Livestream Day 3 on YouTube (Wednesday, June 17th at 11:00 AM PT)
 
 ---
 
 ## 🎒 Day 4: Vibe Coding Agent Security and Evaluation
 Theme: Rigorous testing, security guardrails, and quality evaluations.
 
-- [ ] Assignments
-  - [ ] Listen to summary podcast episode
-  - [ ] Read Day 4 whitepaper
-- [ ] Codelabs
-  - [ ] Implement evaluation and testing harnesses
-- [ ] Livestream & AMAs
+- [x] Assignments
+  - [x] Listen to summary podcast episode: [Unit 4 Podcast](https://www.youtube.com/watch?v=Ddz1b8CYPvg)
+  - [x] Read Day 4 whitepaper: [Vibe Coding Agent Security and Evaluation](https://www.kaggle.com/whitepaper-vibe-coding-agent-security-and-evaluation)
+- [x] Codelabs
+  - [x] Implement evaluation and testing harnesses (Completed - created `expense_agent.py` and `security_scan.py`)
+- [/] Livestream & AMAs
   - [ ] Attend Livestream Day 4 on YouTube (Thursday, June 18th at 11:00 AM PT)
 
 ---

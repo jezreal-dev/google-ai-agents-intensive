@@ -31,13 +31,23 @@ google-ai-agents-intensive/
 ├── .github/
 │   └── dependabot.yml       # Automated dependency security scanning
 │
+├── .agents/
+│   └── skills/
+│       └── hello-world-skill/
+│           └── SKILL.md     # Day 3: Local declarative agent skill definition
+│
 ├── README.md               # Course overview & portfolio index
 ├── progress.md             # Interactive checklist for course requirements
 ├── SECURITY.md             # Vulnerability reporting guidelines
 │
 ├── day1_notes.md           # Unit 1: Podcast and Whitepaper summaries
 ├── day2_notes.md           # Unit 2: Podcast/Whitepaper notes & local MCP config
+├── day3_notes.md           # Unit 3: Podcast/Whitepaper summaries (Agent Skills)
+├── day4_notes.md           # Unit 4: Podcast/Whitepaper summaries (Security & Eval)
 ├── cli_usage.md            # Guidelines for using agy CLI and agentapi
+│
+├── expense_agent.py        # Day 4: Expense approval agent featuring HITL
+├── security_scan.py        # Day 4: Local threat credential scanner
 │
 ├── index.html              # Web page dashboard structure (deployed to root)
 ├── index.css               # Custom snowflakes and balloons animations
