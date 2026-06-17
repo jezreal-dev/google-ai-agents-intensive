@@ -6,19 +6,20 @@ This repository contains all my course notes, daily assignment reflections, prog
 
 ---
 
-## 📅 Course Roadmap
+## 📅 Course Roadmap & Deliverables
 
 *   **Day 1: Introduction to Agents & Vibe Coding**
     *   **Topic**: Transition from manual coding syntax to natural language intent ("vibe coding").
-    *   **Deliverables**: Unit 1 Study Notes, Snowflakes & Balloons Web App prototype.
+    *   **Deliverables**: [day1_notes.md](file:///C:/Users/USER/.gemini/antigravity/scratch/google-ai-agents-intensive/day1_notes.md) (Notes), Snowflakes & Balloons Web App prototype ([index.html](file:///C:/Users/USER/.gemini/antigravity/scratch/google-ai-agents-intensive/index.html) served at root).
 *   **Day 2: Agent Tools & Interoperability**
     *   **Topic**: Connecting agents to external APIs, code execution, and multi-agent setups.
+    *   **Deliverables**: [day2_notes.md](file:///C:/Users/USER/.gemini/antigravity/scratch/google-ai-agents-intensive/day2_notes.md) (Notes & central MCP Setup), [cli_usage.md](file:///C:/Users/USER/.gemini/antigravity/scratch/google-ai-agents-intensive/cli_usage.md) (CLI Guidelines), [SECURITY.md](file:///C:/Users/USER/.gemini/antigravity/scratch/google-ai-agents-intensive/SECURITY.md) (Security Policy), and [.github/dependabot.yml](file:///C:/Users/USER/.gemini/antigravity/scratch/google-ai-agents-intensive/.github/dependabot.yml) (Automated Security Updates).
 *   **Day 3: Agent Skills**
-    *   **Topic**: Implementing memory, handling long-context windows, and building modular agentic skills.
+    *   **Topic**: Implementing memory, handling long-context windows, and building modular agentic skills. *(Upcoming)*
 *   **Day 4: Vibe Coding Agent Security and Evaluation**
-    *   **Topic**: Testing, guardrails, security benchmarks, and safety evaluations.
+    *   **Topic**: Testing, guardrails, security benchmarks, and safety evaluations. *(Upcoming)*
 *   **Day 5: Spec-Driven Production Grade Development**
-    *   **Topic**: Cloud deployment (Cloud Run), debugging, and fleet orchestration.
+    *   **Topic**: Cloud deployment (Cloud Run), debugging, and fleet orchestration. *(Upcoming)*
 
 ---
 
@@ -27,9 +28,16 @@ This repository contains all my course notes, daily assignment reflections, prog
 ```text
 google-ai-agents-intensive/
 │
+├── .github/
+│   └── dependabot.yml       # Automated dependency security scanning
+│
 ├── README.md               # Course overview & portfolio index
 ├── progress.md             # Interactive checklist for course requirements
+├── SECURITY.md             # Vulnerability reporting guidelines
+│
 ├── day1_notes.md           # Unit 1: Podcast and Whitepaper summaries
+├── day2_notes.md           # Unit 2: Podcast/Whitepaper notes & local MCP config
+├── cli_usage.md            # Guidelines for using agy CLI and agentapi
 │
 ├── index.html              # Web page dashboard structure (deployed to root)
 ├── index.css               # Custom snowflakes and balloons animations
@@ -38,10 +46,30 @@ google-ai-agents-intensive/
 
 ---
 
-## 🛠️ Getting Started
+## 🛠️ Getting Started & Local Setup
 
-To view the Day 1 prototype web application:
+### 1. View the Day 1 Animations Web App
+To view the interactive prototype locally:
 1. Open the repository root.
-2. Launch a local web server (e.g., Python `http.server` or VS Code Live Server).
+2. Launch a local web server (e.g., Python `python -m http.server` or VS Code Live Server).
 3. Open the root URL in your browser to test the interactive falling snowflakes and rising balloons!
+
+### 2. Configure Google Developer Knowledge MCP (Day 2)
+To enable the Google Developer Knowledge MCP server locally in your Antigravity environment:
+1. Create a Google Cloud API Key restricted to the Google Developer Knowledge API.
+2. Add the configuration to your central configuration file `~/.gemini/antigravity/mcp_config.json`:
+   ```json
+   {
+     "mcpServers": {
+       "google-developer-knowledge": {
+         "headers": {
+           "X-Goog-Api-Key": "<YOUR_API_KEY>"
+         },
+         "serverUrl": "https://developerknowledge.googleapis.com/mcp"
+       }
+     }
+   }
+   ```
+3. Test your MCP connection using the Antigravity TUI or CLI by querying: *"Does Google Workspace support MCP servers?"*
+
 
