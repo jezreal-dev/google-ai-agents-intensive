@@ -51,8 +51,7 @@ google-ai-agents-intensive/
 │   ├── day3_notes.md           # Unit 3: Podcast/Whitepaper summaries (Agent Skills)
 │   ├── day4_notes.md           # Unit 4: Podcast/Whitepaper summaries (Security & Eval)
 │   ├── day5_notes.md           # Unit 5: Podcast/Whitepaper summaries (Production SDD)
-│   ├── emails.md               # Day 3 & 4 converted raw email announcements
-│   └── incoming_emails.md      # Converted raw email announcements (markitdown)
+│   └── emails.md               # Day 3 to Capstone converted raw email announcements
 │
 ├── scripts/
 │   ├── cloud_run_deploy.sh     # Day 5: Cloud Run serverless deployment simulation script
