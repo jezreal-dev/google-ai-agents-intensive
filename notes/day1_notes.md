@@ -3,6 +3,9 @@
 ## Overview
 Day 1 introduces the paradigm shift in modern software engineering from **syntax-based manual coding** to **intent-driven development (vibe coding)** and **agentic engineering**.
 
+> [!NOTE]
+> **Vibe Coding** represents a transition from writing code character-by-character to orchestrating agents using natural language intent. The human developer's role is elevated to a systems architect.
+
 ---
 
 ## 📄 Summary: "The New SDLC with Vibe Coding" (Whitepaper)
@@ -16,6 +19,9 @@ In the new SDLC, developers shift from being "code writers" to "system orchestra
 1.  **Context Harness**: Feeding the agent the right files, environment details, and domain knowledge.
 2.  **Constraint Harness**: Establishing guardrails, rules, and limits (e.g., coding standards, file structures, library restrictions).
 3.  **Evaluation Harness**: Defining what "correctness" looks like through automated test suites, linting configurations, and quality checks.
+
+> [!IMPORTANT]
+> Success in vibe coding requires shifting focus from manual syntax typing to **harness and test design**. Without an active evaluation harness, agents cannot verify their results or auto-correct errors.
 
 ### 3. Compression of the Software Development Life Cycle (SDLC)
 *   Traditionally, planning, coding, compiling, testing, and deployment are sequential, slow steps.

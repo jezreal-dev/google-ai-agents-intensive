@@ -69,17 +69,29 @@ Theme: Rigorous testing, security guardrails, and quality evaluations.
 ## 🎒 Day 5: Spec-Driven Production Grade Development
 Theme: Cloud deployment, fleet governance, debugging, and observability.
 
-- [ ] Assignments
-  - [ ] Listen to summary podcast episode
-  - [ ] Read Day 5 whitepaper
-- [ ] Codelabs
-  - [ ] Deploy and monitor production-grade agents
-- [ ] Livestream & AMAs
-  - [ ] Attend Livestream Day 5 on YouTube (Friday, June 19th at 11:00 AM PT)
+- [x] Assignments
+  - [x] Listen to summary podcast episode: [Unit 5 Podcast](https://www.youtube.com/watch?v=VSRdL4wlbLY)
+  - [x] Read Day 5 whitepaper: [Spec-Driven Production Grade Development in the Age of Vibe Coding](https://www.kaggle.com/whitepaper-spec-driven-production-grade-development-in-the-age-of-vibe-coding)
+- [x] Codelabs
+  - [x] [Optional] Deploy and host your AI agents on Google Cloud: [Codelab](https://codelabs.developers.google.com/enterprise-cloud-scale-deploying-the-expense-agent-to-agent-runtime-on-google-cloud) (Simulated locally)
+  - [x] [Optional] Build a front-end web app and link it to your cloud-hosted AI agent: [Codelab](https://codelabs.developers.google.com/vibecode-frontend-with-antigravity) (Simulated locally)
+- [x] Livestream & AMAs
+  - [x] Attend Livestream Day 5 on YouTube (Friday, June 19th at 11:00 AM PT): [Day 5 Livestream](https://youtube.com/live/Y3HfV4IroCU)
 
 ---
 
 ## 🏆 Capstone Project
-- [ ] Build and document an autonomous AI agent
-- [ ] Record video explanation and write summary
-- [ ] Submit project link on Kaggle (Deadline: July 6, 2026, 11:59 PM PT)
+Status: Under Development (Deadline: July 6, 2026, 11:59 PM PT)
+
+- [ ] Select a track:
+  - [ ] Track 1: Agents for Good (Societal challenges: education, healthcare, agriculture, arts)
+  - [ ] Track 2: Agents for Business (Enterprise problems: expense management, pipeline optimization, insights)
+  - [ ] Track 3: Concierge Agents (Personal assistants: planning, task management, user data security)
+  - [ ] Track 4: Freestyle Track (Niche, creative, experimental)
+- [ ] Build and document an autonomous AI agent demonstrating at least three key concepts:
+  - [ ] Multi-agent systems built with Agent Development Kit (ADK)
+  - [ ] Model Context Protocol (MCP) servers
+  - [ ] Agent skills (SKILL.md & progressive disclosure)
+  - [ ] Security features (HITL, automated scans, sandboxing)
+- [ ] Record a video explanation and write a project summary
+- [ ] Submit project link on Kaggle: [Capstone Project page](https://www.kaggle.com/competitions/vibecoding-agents-capstone-project)

@@ -34,6 +34,9 @@ The protocol divides responsibilities into three distinct roles:
 *   **The Confused Deputy Problem**: A malicious file or prompt can trick an agent into abusing its tools (e.g., an agent reads a malicious markdown file that instructs it to run a terminal command deleting the project).
 *   **Context Window Bloat**: Exposing too many resources or tools at once consumes valuable token space, reducing reasoning quality and increasing costs.
 
+> [!WARNING]
+> **The Confused Deputy Problem** is a critical security risk where an agent is tricked into abusing its tools (e.g., executing a command to delete data) via a malicious prompt hidden inside untrusted files or data it parses. Sandboxing and permission scoping are vital defenses.
+
 ---
 
 ## 🎙️ Summary: Companion Podcast Episode (Unit 2)
@@ -50,6 +53,9 @@ The protocol divides responsibilities into three distinct roles:
 To enable real-time queries against Google's official developer documentation corpus directly in Antigravity, we configured the `google-developer-knowledge` Model Context Protocol (MCP) server.
 
 ### 1. Central Configuration (`mcp_config.json`)
+> [!IMPORTANT]
+> The central config file is located at `~/.gemini/antigravity/mcp_config.json` (outside the workspace git repo) to ensure that your private API key is never committed to GitHub.
+
 We successfully updated `C:\Users\USER\.gemini\antigravity\mcp_config.json` with the following configuration:
 ```json
 {
