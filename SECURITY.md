@@ -1,24 +1,51 @@
 # Security Policy
 
+## Overview
+
+This repository contains study notes, working code samples, and assignment deliverables for the Google AI Agents Intensive Course. Security is taken seriously — the codebase includes automated credential scanning on every commit via a pre-commit git hook.
+
+---
+
 ## Supported Versions
 
-This repository contains study notes, guides, and assignments for the Google AI Agents course. Only the latest release/state on the `main` branch is actively maintained.
+Only the latest state on the `main` branch is actively maintained and reviewed.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| Latest (`main` branch) | :white_check_mark: |
-| Older commits/branches | :x:                |
+| Version | Supported |
+|---------|-----------|
+| `main` (latest) | ✅ Yes |
+| Older commits / branches | ❌ No |
+
+---
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability in this project (such as exposed credentials, keys, or security flaws in code samples), please report it responsibly:
+If you discover a security vulnerability in this project — such as exposed credentials, API keys, or security flaws in code samples — please follow responsible disclosure practices:
 
-1.  **Do NOT** open a public issue on GitHub.
-2.  Email your report privately to **jezreelglobal@gmail.com**.
-3.  Include a detailed description of the vulnerability, steps to reproduce it, and any potential remediation steps.
+1. **Do NOT** open a public GitHub issue.
+2. Email your report privately to **jezreelglobal@gmail.com**.
+3. Include the following in your report:
+   - A clear description of the vulnerability
+   - Steps to reproduce it
+   - Any suggested remediation steps
 
-### What to Expect
+---
 
-*   **Initial Response**: You will receive an acknowledgment email within 48 hours of your report.
-*   **Updates**: We will keep you updated on the progress of validating and patching the vulnerability.
-*   **Resolution**: Once fixed, a commit will be pushed to the repository, and the issue will be resolved.
+## What to Expect
+
+| Stage | Timeframe |
+|-------|-----------|
+| Acknowledgement email | Within 48 hours of your report |
+| Validation & triage | Within 5 business days |
+| Patch & resolution | As soon as possible; commit pushed to `main` |
+
+We appreciate responsible disclosure and will credit reporters where appropriate.
+
+---
+
+## Built-in Security Controls
+
+This project uses the following automated security controls:
+
+- **Pre-commit hook** — [`scripts/security_scan.py`](scripts/security_scan.py) runs before every `git commit`, scanning staged files for raw API keys matching the `AIzaSy...` pattern.
+- **Dependabot** — [`.github/dependabot.yml`](.github/dependabot.yml) is configured to flag outdated or vulnerable dependencies.
+- **`.gitignore`** — Prevents `.env` files, Python bytecode, and OS artifacts from being tracked.

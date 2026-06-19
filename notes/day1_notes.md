@@ -1,37 +1,56 @@
-# Day 1 Study Notes: Introduction to Agents & Vibe Coding
+# Day 1 Study Notes — Introduction to Agents & Vibe Coding
+
+> **Unit 1 · June 15, 2026**
+> Podcast: [YouTube](https://www.youtube.com/watch?v=cbzmr7vt4XA) · Whitepaper: [The New SDLC with Vibe Coding](https://www.kaggle.com/whitepaper-the-new-SDLC-with-vibe-coding)
+
+---
 
 ## Overview
-Day 1 introduces the paradigm shift in modern software engineering from **syntax-based manual coding** to **intent-driven development (vibe coding)** and **agentic engineering**.
+
+Day 1 introduces the paradigm shift in modern software engineering — from **syntax-based manual coding** to **intent-driven development (vibe coding)** and **agentic engineering**. The core insight: the developer's role is not being replaced; it is being elevated to systems architect.
 
 > [!NOTE]
-> **Vibe Coding** represents a transition from writing code character-by-character to orchestrating agents using natural language intent. The human developer's role is elevated to a systems architect.
+> **Vibe Coding** is a term popularized by Andrej Karpathy (early 2025). It describes a flow state where developers communicate high-level *intent* using natural language, while AI agents handle the syntax translation and multi-file code compilation.
 
 ---
 
-## 📄 Summary: "The New SDLC with Vibe Coding" (Whitepaper)
+## 📄 Whitepaper Summary — *"The New SDLC with Vibe Coding"*
 
 ### 1. Syntax vs. Intent
-*   **Traditional Programming**: Developers act as compilers translating human problems into machine syntax (lines of Python, C++, Go, etc.). This manual translation is a major bottleneck and source of bugs.
-*   **Vibe Coding**: The developer communicates high-level **intent** (architecture, user flows, styling aesthetics) using natural language. The AI agent compiles this intent into precise, multi-file code.
+
+| Traditional Programming | Vibe Coding |
+|-------------------------|-------------|
+| Developer acts as a compiler, translating problems into machine syntax | Developer communicates intent, architecture, and goals in natural language |
+| Manual bottleneck — prone to bugs and slow iteration | AI agent compiles intent into precise, multi-file code automatically |
+| Focus: typing correct syntax | Focus: designing systems, defining tests, reviewing output |
 
 ### 2. The "Factory Model" of Software Development
-In the new SDLC, developers shift from being "code writers" to "system orchestrators" (factory managers). The developer's primary job is to design the three harnesses that guide the AI:
-1.  **Context Harness**: Feeding the agent the right files, environment details, and domain knowledge.
-2.  **Constraint Harness**: Establishing guardrails, rules, and limits (e.g., coding standards, file structures, library restrictions).
-3.  **Evaluation Harness**: Defining what "correctness" looks like through automated test suites, linting configurations, and quality checks.
+
+In the new SDLC, the developer shifts from "code writer" to "system orchestrator" — like a factory manager directing a production line. The developer's primary job is designing three harnesses that guide the AI:
+
+1. **Context Harness** — feeding the agent the right files, environment details, and domain knowledge.
+2. **Constraint Harness** — establishing guardrails, rules, and limits (coding standards, file structures, library restrictions).
+3. **Evaluation Harness** — defining what "correctness" looks like via automated test suites, linting configs, and quality checks.
 
 > [!IMPORTANT]
-> Success in vibe coding requires shifting focus from manual syntax typing to **harness and test design**. Without an active evaluation harness, agents cannot verify their results or auto-correct errors.
+> Without an active **evaluation harness**, agents cannot verify their results or auto-correct errors. Harness and test design is the new core skill.
 
-### 3. Compression of the Software Development Life Cycle (SDLC)
-*   Traditionally, planning, coding, compiling, testing, and deployment are sequential, slow steps.
-*   With AI agents, these steps collapse into a tight, autonomous loop. The agent can read files, write code, run terminal tests, observe errors, and edit the code to fix them—completing the SDLC in a matter of seconds.
+### 3. Compression of the SDLC
+
+Traditionally, planning → coding → compiling → testing → deployment are slow, sequential steps. With AI agents, these collapse into a tight autonomous loop:
+
+```
+Read Files → Write Code → Run Tests → Observe Errors → Fix Code → Repeat
+```
+
+A complete SDLC iteration that once took days can now complete in seconds.
 
 ---
 
-## 🎙️ Summary: Companion Podcast Episode (Unit 1)
+## 🎙️ Podcast Summary — Unit 1
 
 ### Key Discussion Points
-*   **AI Chatbots vs. AI Agents**: Chatbots are reactive (one-off text completion). Agents are proactive and autonomous—they operate in a continuous loop of **Perception, Reasoning, and Action** to achieve a defined goal.
-*   **What is "Vibe Coding"?**: A term popularized by Andrej Karpathy (early 2025) describing a flow state where developers focus on building features, UI design, and testing, while leaving syntax details to the AI.
-*   **The Paradigm Shift**: Software engineering isn't dying; it is graduating to a higher level of abstraction. Success requires strong system design skills, clear communication, and rigorous verification techniques.
+
+- **AI Chatbots vs. AI Agents**: Chatbots are reactive (one-off text completion). Agents are proactive and autonomous — they operate in a continuous loop of **Perception → Reasoning → Action** to achieve a defined goal.
+- **What is "Vibe Coding"?**: A flow state where developers focus on building features, UI design, and testing, while leaving syntax details to the AI.
+- **The Paradigm Shift**: Software engineering isn't dying — it is graduating to a higher level of abstraction. Success requires strong system design skills, clear communication, and rigorous verification.

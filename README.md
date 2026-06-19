@@ -1,100 +1,143 @@
-# Google AI Agents Intensive Course Portfolio
+# Google AI Agents Intensive — Portfolio
 
-Welcome to my portfolio for the **5-Day AI Agents: Intensive Vibe Coding Course With Google** (June 15 - June 19, 2026).
+> **5-Day AI Agents: Intensive Vibe Coding Course with Google**
+> June 15–19, 2026 · Kaggle × Google DeepMind
 
-This repository contains all my course notes, daily assignment reflections, progress trackers, and projects developed throughout the intensive program.
-
----
-
-## 📅 Course Roadmap & Deliverables
-
-*   **Day 1: Introduction to Agents & Vibe Coding**
-    *   **Topic**: Transition from manual coding syntax to natural language intent ("vibe coding").
-    *   **Deliverables**: [day1_notes.md](notes/day1_notes.md) (Notes), Snowflakes & Balloons Web App prototype ([index.html](index.html) served at root).
-*   **Day 2: Agent Tools & Interoperability**
-    *   **Topic**: Connecting agents to external APIs, code execution, and multi-agent setups.
-    *   **Deliverables**: [day2_notes.md](notes/day2_notes.md) (Notes & central MCP Setup), [cli_usage.md](docs/cli_usage.md) (CLI Guidelines), [SECURITY.md](SECURITY.md) (Security Policy), and [.github/dependabot.yml](.github/dependabot.yml) (Automated Security Updates).
-*   **Day 3: Agent Skills**
-    *   **Topic**: Implementing memory, handling long-context windows, and building modular agentic skills.
-    *   **Deliverables**: [day3_notes.md](notes/day3_notes.md) (Notes), and a local custom declarative skill ([SKILL.md](.agents/skills/hello-world-skill/SKILL.md)).
-*   **Day 4: Vibe Coding Agent Security and Evaluation**
-    *   **Topic**: Testing, guardrails, security benchmarks, and safety evaluations.
-    *   **Deliverables**: [day4_notes.md](notes/day4_notes.md) (Notes), [expense_agent.py](scripts/expense_agent.py) (Human-in-the-Loop simulation), and [security_scan.py](scripts/security_scan.py) (Credentials Scanner).
-*   **Day 5: Spec-Driven Production Grade Development**
-    *   **Topic**: Cloud deployment (Cloud Run), debugging, fleet orchestration, and Spec-Driven Development (SDD).
-    *   **Deliverables**: [day5_notes.md](notes/day5_notes.md) (Notes), [cloud_run_deploy.sh](scripts/cloud_run_deploy.sh) (Cloud Run deployment simulator), [observability_logger.py](scripts/observability_logger.py) (Telemetry logger), and [expense_agent.feature](scripts/expense_agent.feature) (Gherkin specification).
-*   **🏆 Capstone Project**
-    *   **Topic**: Autonomous AI agent project showcasing key ADK, MCP, and skill capabilities.
-    *   **Status**: Under Development (Tracks: Business, Good, Concierge, Freestyle. Deadline: July 6, 2026).
+A hands-on portfolio documenting all study notes, daily assignments, working code deliverables, and capstone project development from the 5-day intensive program.
 
 ---
 
-## 📂 Project Structure
+## 📅 Course Roadmap
+
+| Day | Topic | Key Deliverables |
+|-----|-------|-----------------|
+| **Day 1** | Introduction to Agents & Vibe Coding | [`day1_notes.md`](notes/day1_notes.md) · [`index.html`](index.html) Web App |
+| **Day 2** | Agent Tools & Interoperability (MCP) | [`day2_notes.md`](notes/day2_notes.md) · [`cli_usage.md`](docs/cli_usage.md) · [`SECURITY.md`](SECURITY.md) |
+| **Day 3** | Agent Skills & Memory | [`day3_notes.md`](notes/day3_notes.md) · [`SKILL.md`](.agents/skills/hello-world-skill/SKILL.md) |
+| **Day 4** | Security & Evaluation | [`day4_notes.md`](notes/day4_notes.md) · [`expense_agent.py`](scripts/expense_agent.py) · [`security_scan.py`](scripts/security_scan.py) |
+| **Day 5** | Spec-Driven Production Development | [`day5_notes.md`](notes/day5_notes.md) · [`cloud_run_deploy.sh`](scripts/cloud_run_deploy.sh) · [`expense_agent.feature`](scripts/expense_agent.feature) |
+| **🏆 Capstone** | Autonomous Agent Project | In development — deadline **July 6, 2026** |
+
+---
+
+## 📂 Repository Structure
 
 ```text
 google-ai-agents-intensive/
 │
 ├── .github/
-│   └── dependabot.yml       # Automated dependency security scanning
+│   └── dependabot.yml              # Automated dependency security scanning
 │
 ├── .agents/
 │   └── skills/
 │       └── hello-world-skill/
-│           └── SKILL.md     # Day 3: Local declarative agent skill definition
+│           └── SKILL.md            # Day 3: Local declarative agent skill definition
 │
 ├── docs/
-│   └── cli_usage.md            # Guidelines for using agy CLI and agentapi
+│   └── cli_usage.md                # Antigravity CLI (agy) & agentapi usage guide
 │
 ├── notes/
-│   ├── day1_notes.md           # Unit 1: Podcast and Whitepaper summaries
-│   ├── day2_notes.md           # Unit 2: Podcast/Whitepaper notes & local MCP config
-│   ├── day3_notes.md           # Unit 3: Podcast/Whitepaper summaries (Agent Skills)
-│   ├── day4_notes.md           # Unit 4: Podcast/Whitepaper summaries (Security & Eval)
-│   ├── day5_notes.md           # Unit 5: Podcast/Whitepaper summaries (Production SDD)
+│   ├── day1_notes.md               # Unit 1: Introduction to Agents & Vibe Coding
+│   ├── day2_notes.md               # Unit 2: Agent Tools & Interoperability (MCP)
+│   ├── day3_notes.md               # Unit 3: Agent Skills & Memory Management
+│   ├── day4_notes.md               # Unit 4: Security & Evaluation
+│   └── day5_notes.md               # Unit 5: Spec-Driven Production Development
 │
 ├── scripts/
-│   ├── cloud_run_deploy.sh     # Day 5: Cloud Run serverless deployment simulation script
-│   ├── expense_agent.feature   # Day 5: Behavior-driven Gherkin feature specification
-│   ├── expense_agent.py        # Day 4: Expense approval agent featuring HITL
-│   ├── expense_results.json    # Log of expense results
-│   ├── observability_logger.py # Day 5: Telemetry logger simulating OpenTelemetry spans
-│   └── security_scan.py        # Day 4: Local threat credential scanner
+│   ├── cloud_run_deploy.sh         # Day 5: Cloud Run deployment simulation
+│   ├── expense_agent.feature       # Day 5: Gherkin BDD specification
+│   ├── expense_agent.py            # Day 4: Expense approval agent with HITL
+│   ├── expense_results.json        # Persisted expense approval log
+│   ├── observability_logger.py     # Day 5: OpenTelemetry-style telemetry logger
+│   ├── run_sdd_tests.py            # Day 5: Gherkin SDD test runner
+│   ├── security_scan.py            # Day 4: Credential leak pre-commit scanner
+│   └── sre_triage_agent.py         # Capstone: SRE auto-triage agent skeleton
 │
-├── README.md               # Course overview & portfolio index
-├── progress.md             # Interactive checklist for course requirements
-├── SECURITY.md             # Vulnerability reporting guidelines
+├── .gitignore                      # Python, OS, and IDE artifact exclusions
+├── README.md                       # Course overview & portfolio index (this file)
+├── SECURITY.md                     # Vulnerability reporting policy
+├── progress.md                     # Interactive daily progress checklist
 │
-├── index.html              # Web page dashboard structure (deployed to root)
-├── index.css               # Custom snowflakes and balloons animations
-└── index.js                # Interactive trigger and cleanup logic
+├── index.html                      # Day 1: Snowflakes & Balloons web app
+├── index.css                       # Day 1: Animation styles
+└── index.js                        # Day 1: Interactive trigger logic
 ```
 
 ---
 
-## 🛠️ Getting Started & Local Setup
+## 🛠️ Local Setup
 
-### 1. View the Day 1 Animations Web App
-To view the interactive prototype locally:
-1. Open the repository root.
-2. Launch a local web server (e.g., Python `python -m http.server` or VS Code Live Server).
-3. Open the root URL in your browser to test the interactive falling snowflakes and rising balloons!
+### Prerequisites
 
-### 2. Configure Google Developer Knowledge MCP (Day 2)
-To enable the Google Developer Knowledge MCP server locally in your Antigravity environment:
-1. Create a Google Cloud API Key restricted to the Google Developer Knowledge API.
-2. Add the configuration to your central configuration file `~/.gemini/antigravity/mcp_config.json`:
-   ```json
-   {
-     "mcpServers": {
-       "google-developer-knowledge": {
-         "headers": {
-           "X-Goog-Api-Key": "<YOUR_API_KEY>"
-         },
-         "serverUrl": "https://developerknowledge.googleapis.com/mcp"
-       }
-     }
-   }
-   ```
-3. Test your MCP connection using the Antigravity TUI or CLI by querying: *"Does Google Workspace support MCP servers?"*
+- Python 3.10+
+- [Antigravity 2.0](https://antigravity.dev) with CLI (`agy`) installed
+- A Google Cloud API Key (for MCP server configuration)
 
+### 1. View the Day 1 Web App
 
+```bash
+python -m http.server 8080
+# Open http://localhost:8080 in your browser
+```
+
+### 2. Configure the Google Developer Knowledge MCP Server
+
+> **Security note:** The API key is stored in `~/.gemini/antigravity/mcp_config.json`, which lives **outside** this repo to prevent committing secrets.
+
+Add the following to your central `mcp_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "google-developer-knowledge": {
+      "headers": {
+        "X-Goog-Api-Key": "<YOUR_API_KEY>"
+      },
+      "serverUrl": "https://developerknowledge.googleapis.com/mcp"
+    }
+  }
+}
+```
+
+Verify the connection in the Antigravity TUI by querying: *"Does Google Workspace support MCP servers?"*
+
+### 3. Run the SDD Gherkin Test Suite
+
+```bash
+python scripts/run_sdd_tests.py
+```
+
+Expected output:
+
+```
+[*] Running SDD Gherkin validation tests...
+>> Scenario: Small expense claims are automatically approved
+   [+] PASSED: Auto-approved with hitl=False
+>> Scenario: Large expense claims block for human-in-the-loop triage
+   [+] PASSED: HITL gate triggered with hitl=True
+[+] ALL GHERKIN SCENARIOS PASSED
+```
+
+### 4. Run the Credential Security Scanner
+
+```bash
+python scripts/security_scan.py
+# Also runs automatically as a git pre-commit hook
+```
+
+---
+
+## 🔗 Course Resources
+
+| Resource | Link |
+|----------|------|
+| Course Home | [Kaggle — 5-Day AI Agents Intensive](https://www.kaggle.com/learn-guide/5-day-genai) |
+| Capstone Submission | [Kaggle Competition Page](https://www.kaggle.com/competitions/vibecoding-agents-capstone-project) |
+| ADK Documentation | [Google Agent Development Kit](https://google.github.io/adk-docs/) |
+| MCP Specification | [modelcontextprotocol.io](https://modelcontextprotocol.io) |
+
+---
+
+## 📄 License
+
+This repository is a personal learning portfolio. All course materials, whitepapers, and codelabs are the property of Google and Kaggle.

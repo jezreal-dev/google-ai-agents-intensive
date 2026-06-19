@@ -1,97 +1,129 @@
-# Google AI Agents Intensive Course Progress Tracker
+# Progress Tracker — Google AI Agents Intensive
 
-This document tracks my progress through the 5-Day Intensive course.
+> **5-Day AI Agents: Intensive Vibe Coding Course with Google**
+> June 15–19, 2026 · Deadline for Capstone: **July 6, 2026**
 
----
-
-## 🎒 Day 1: Introduction to Agents & Vibe Coding
-Theme: Transitioning from manual syntax coding to intent-driven development and agentic engineering.
-
-- [x] Onboarding & Setup
-  - [x] Create Kaggle Account
-  - [x] Create Google AI Studio Account & API Key
-  - [x] Install Antigravity 2.0
-  - [x] Install Antigravity IDE
-  - [x] Install Antigravity CLI
-  - [x] Join Kaggle Discord Server
-- [x] Assignments
-  - [x] Listen to summary podcast episode: [Unit 1 Podcast](https://www.youtube.com/watch?v=cbzmr7vt4XA)
-  - [x] Read "The New SDLC with Vibe Coding" whitepaper: [Kaggle Whitepaper](https://www.kaggle.com/whitepaper-the-new-SDLC-with-vibe-coding)
-- [x] Codelabs
-  - [x] Get started with Antigravity 2.0 and IDE (Completed - currently using Antigravity 2.0 agent)
-  - [x] Build a Web Application in AI Studio and Deploy to Cloud Run (Completed - deployed to GitHub Pages)
-- [x] Livestream & AMAs
-  - [x] Attend Livestream Day 1 on YouTube (Monday, June 15th at 11:00 AM PT)
+Track the completion status of all daily assignments, codelabs, and the capstone project below.
 
 ---
 
-## 🎒 Day 2: Agent Tools & Interoperability
-Theme: Interacting with external APIs, code execution, and multi-agent setups.
+## Day 1 — Introduction to Agents & Vibe Coding
 
-- [x] Assignments
-  - [x] Listen to summary podcast episode: [Unit 2 Podcast](https://www.youtube.com/watch?v=GjjKXqxFTOY)
-  - [x] Read Day 2 whitepaper: [Agent Tools & Interoperability](https://www.kaggle.com/whitepaper-agent-tools-and-interoperability)
-- [x] Codelabs
-  - [x] Get started with Antigravity CLI (Completed - documented in `docs/cli_usage.md`)
-  - [x] Explore Google Developer Knowledge MCP server in Google Antigravity (Completed - configured in central `mcp_config.json`)
-- [/] Livestream & AMAs
-  - [ ] Attend Livestream Day 2 on YouTube (Tuesday, June 16th at 11:00 AM PT)
+> **Theme:** Transitioning from manual syntax coding to intent-driven development and agentic engineering.
 
----
+### Onboarding & Setup
+- [x] Create Kaggle account
+- [x] Create Google AI Studio account & API key
+- [x] Install Antigravity 2.0
+- [x] Install Antigravity IDE
+- [x] Install Antigravity CLI
+- [x] Join Kaggle Discord server
 
-## 🎒 Day 3: Agent Skills
-Theme: Building memory, managing long contexts, and agentic skills.
+### Assignments
+- [x] Listen to the Unit 1 podcast — [YouTube](https://www.youtube.com/watch?v=cbzmr7vt4XA)
+- [x] Read *"The New SDLC with Vibe Coding"* whitepaper — [Kaggle](https://www.kaggle.com/whitepaper-the-new-SDLC-with-vibe-coding)
 
-- [x] Assignments
-  - [x] Listen to summary podcast episode: [Unit 3 Podcast](https://www.youtube.com/watch?v=uYURYHhpmKc)
-  - [x] Read Day 3 whitepaper: [Agent Skills](https://www.kaggle.com/whitepaper-agent-skills)
-- [x] Codelabs
-  - [x] Explore how Skills work in Antigravity (Completed - created local skill definition)
-  - [x] Build agents in Antigravity with Agents CLI and ADK (Completed)
-- [x] Livestream & AMAs
-  - [x] Attend Livestream Day 3 on YouTube (Wednesday, June 17th at 11:00 AM PT)
+### Codelabs
+- [x] Get started with Antigravity 2.0 and IDE
+- [x] Build a web application in AI Studio and deploy to Cloud Run (deployed to GitHub Pages)
+
+### Livestream
+- [x] Attend Day 1 livestream — Monday, June 15 at 11:00 AM PT
 
 ---
 
-## 🎒 Day 4: Vibe Coding Agent Security and Evaluation
-Theme: Rigorous testing, security guardrails, and quality evaluations.
+## Day 2 — Agent Tools & Interoperability
 
-- [x] Assignments
-  - [x] Listen to summary podcast episode: [Unit 4 Podcast](https://www.youtube.com/watch?v=Ddz1b8CYPvg)
-  - [x] Read Day 4 whitepaper: [Vibe Coding Agent Security and Evaluation](https://www.kaggle.com/whitepaper-vibe-coding-agent-security-and-evaluation)
-- [x] Codelabs
-  - [x] Implement evaluation and testing harnesses (Completed - created `scripts/expense_agent.py` and `scripts/security_scan.py`)
-- [/] Livestream & AMAs
-  - [ ] Attend Livestream Day 4 on YouTube (Thursday, June 18th at 11:00 AM PT)
+> **Theme:** Connecting agents to external APIs, code execution environments, and multi-agent setups via MCP.
+
+### Assignments
+- [x] Listen to the Unit 2 podcast — [YouTube](https://www.youtube.com/watch?v=GjjKXqxFTOY)
+- [x] Read *"Agent Tools & Interoperability"* whitepaper — [Kaggle](https://www.kaggle.com/whitepaper-agent-tools-and-interoperability)
+
+### Codelabs
+- [x] Get started with Antigravity CLI — documented in [`docs/cli_usage.md`](docs/cli_usage.md)
+- [x] Configure Google Developer Knowledge MCP server — configured in central `mcp_config.json`
+
+### Livestream
+- [/] Attend Day 2 livestream — Tuesday, June 16 at 11:00 AM PT
 
 ---
 
-## 🎒 Day 5: Spec-Driven Production Grade Development
-Theme: Cloud deployment, fleet governance, debugging, and observability.
+## Day 3 — Agent Skills
 
-- [x] Assignments
-  - [x] Listen to summary podcast episode: [Unit 5 Podcast](https://www.youtube.com/watch?v=VSRdL4wlbLY)
-  - [x] Read Day 5 whitepaper: [Spec-Driven Production Grade Development in the Age of Vibe Coding](https://www.kaggle.com/whitepaper-spec-driven-production-grade-development-in-the-age-of-vibe-coding)
-- [x] Codelabs
-  - [x] [Optional] Deploy and host your AI agents on Google Cloud: [Codelab](https://codelabs.developers.google.com/enterprise-cloud-scale-deploying-the-expense-agent-to-agent-runtime-on-google-cloud) (Simulated locally)
-  - [x] [Optional] Build a front-end web app and link it to your cloud-hosted AI agent: [Codelab](https://codelabs.developers.google.com/vibecode-frontend-with-antigravity) (Simulated locally)
-- [x] Livestream & AMAs
-  - [x] Attend Livestream Day 5 on YouTube (Friday, June 19th at 11:00 AM PT): [Day 5 Livestream](https://youtube.com/live/Y3HfV4IroCU)
+> **Theme:** Building memory, managing long-context windows, and creating modular agentic skills.
+
+### Assignments
+- [x] Listen to the Unit 3 podcast — [YouTube](https://www.youtube.com/watch?v=uYURYHhpmKc)
+- [x] Read *"Agent Skills"* whitepaper — [Kaggle](https://www.kaggle.com/whitepaper-agent-skills)
+
+### Codelabs
+- [x] Explore how Skills work in Antigravity — created local skill at [`.agents/skills/hello-world-skill/SKILL.md`](.agents/skills/hello-world-skill/SKILL.md)
+- [x] Build agents in Antigravity with Agents CLI and ADK
+
+### Livestream
+- [x] Attend Day 3 livestream — Wednesday, June 17 at 11:00 AM PT
+
+---
+
+## Day 4 — Vibe Coding Agent Security & Evaluation
+
+> **Theme:** Rigorous testing, security guardrails, and quality evaluations in non-deterministic AI workflows.
+
+### Assignments
+- [x] Listen to the Unit 4 podcast — [YouTube](https://www.youtube.com/watch?v=Ddz1b8CYPvg)
+- [x] Read *"Vibe Coding Agent Security and Evaluation"* whitepaper — [Kaggle](https://www.kaggle.com/whitepaper-vibe-coding-agent-security-and-evaluation)
+
+### Codelabs
+- [x] Build an expense-approval agent with HITL triage — [`scripts/expense_agent.py`](scripts/expense_agent.py)
+- [x] Implement automated credential threat scanner — [`scripts/security_scan.py`](scripts/security_scan.py)
+
+### Livestream
+- [/] Attend Day 4 livestream — Thursday, June 18 at 11:00 AM PT
+
+---
+
+## Day 5 — Spec-Driven Production Grade Development
+
+> **Theme:** Cloud deployment, fleet orchestration, debugging, observability, and Spec-Driven Development (SDD).
+
+### Assignments
+- [x] Listen to the Unit 5 podcast — [YouTube](https://www.youtube.com/watch?v=VSRdL4wlbLY)
+- [x] Read *"Spec-Driven Production Grade Development in the Age of Vibe Coding"* whitepaper — [Kaggle](https://www.kaggle.com/whitepaper-spec-driven-production-grade-development-in-the-age-of-vibe-coding)
+
+### Codelabs
+- [x] Deploy and host AI agents on Google Cloud — simulated via [`scripts/cloud_run_deploy.sh`](scripts/cloud_run_deploy.sh)
+- [x] Build a frontend web app and link to cloud-hosted agent — simulated locally
+
+### Phase 1 SDD Implementation *(bonus)*
+- [x] Write Gherkin SDD specification — [`scripts/expense_agent.feature`](scripts/expense_agent.feature)
+- [x] Implement Gherkin test runner — [`scripts/run_sdd_tests.py`](scripts/run_sdd_tests.py)
+- [x] Configure git pre-commit secret scanner hook — [`.git/hooks/pre-commit`](.git/hooks/pre-commit)
+
+### Livestream
+- [x] Attend Day 5 livestream — Friday, June 19 at 11:00 AM PT — [Recording](https://youtube.com/live/Y3HfV4IroCU)
 
 ---
 
 ## 🏆 Capstone Project
-Status: Under Development (Deadline: July 6, 2026, 11:59 PM PT)
 
-- [ ] Select a track:
-  - [ ] Track 1: Agents for Good (Societal challenges: education, healthcare, agriculture, arts)
-  - [ ] Track 2: Agents for Business (Enterprise problems: expense management, pipeline optimization, insights)
-  - [ ] Track 3: Concierge Agents (Personal assistants: planning, task management, user data security)
-  - [ ] Track 4: Freestyle Track (Niche, creative, experimental)
-- [ ] Build and document an autonomous AI agent demonstrating at least three key concepts:
-  - [ ] Multi-agent systems built with Agent Development Kit (ADK)
-  - [ ] Model Context Protocol (MCP) servers
-  - [ ] Agent skills (SKILL.md & progressive disclosure)
-  - [ ] Security features (HITL, automated scans, sandboxing)
-- [ ] Record a video explanation and write a project summary
-- [ ] Submit project link on Kaggle: [Capstone Project page](https://www.kaggle.com/competitions/vibecoding-agents-capstone-project)
+> **Deadline:** July 6, 2026 at 11:59 PM PT
+> **Submission:** [Kaggle Capstone Competition](https://www.kaggle.com/competitions/vibecoding-agents-capstone-project)
+
+### Track Selection *(choose one)*
+- [ ] **Track 1 — Agents for Good:** Societal challenges (education, healthcare, agriculture, arts)
+- [ ] **Track 2 — Agents for Business:** Enterprise problems (expense management, pipeline optimization)
+- [ ] **Track 3 — Concierge Agents:** Personal assistants (planning, task management, user data security)
+- [ ] **Track 4 — Freestyle:** Niche, creative, or experimental
+
+### Requirements *(demonstrate at least 3)*
+- [ ] Multi-agent systems built with Agent Development Kit (ADK)
+- [ ] Model Context Protocol (MCP) server integration
+- [ ] Agent skills (`SKILL.md` with progressive disclosure)
+- [ ] Security features (HITL, automated scans, sandboxing)
+
+### Deliverables
+- [ ] Working autonomous agent
+- [ ] Video walkthrough and project summary write-up
+- [ ] Public GitHub repository with clean documentation
+- [ ] Submit on Kaggle
