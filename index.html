@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atmosphere Engine | Google AI Agents Course</title>
+    <meta name="description" content="Day 1 Codelab application. Vibe code interactive falling snowflakes and rising balloons animations using Google AI Studio.">
+    <!-- Google Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Background Canvas/Grid -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow"></div>
+
+    <!-- Main Container -->
+    <main class="app-container">
+        <!-- Control Card (Glassmorphism) -->
+        <section class="control-card">
+            <header class="card-header">
+                <div class="logo-wrapper">
+                    <span class="material-symbols-outlined logo-icon">blur_on</span>
+                    <span class="badge">Day 1 Codelab</span>
+                </div>
+                <h1 class="card-title">Atmosphere Engine</h1>
+                <p class="card-subtitle">Vibe coded interactive physics simulation with Antigravity 2.0</p>
+            </header>
+
+            <!-- Interactive Buttons -->
+            <div class="button-group">
+                <button id="btn-snowflakes" class="control-btn btn-snow">
+                    <span class="material-symbols-outlined btn-icon">ac_unit</span>
+                    <div class="btn-label">
+                        <span class="btn-title">Snowflakes</span>
+                        <span class="btn-desc">Cascade for 5s</span>
+                    </div>
+                </button>
+
+                <button id="btn-balloons" class="control-btn btn-balloons">
+                    <span class="material-symbols-outlined btn-icon">cake</span>
+                    <div class="btn-label">
+                        <span class="btn-title">Balloons</span>
+                        <span class="btn-desc">Float up for 5s</span>
+                    </div>
+                </button>
+            </div>
+
+            <!-- Footer info -->
+            <footer class="card-footer">
+                <p>Designed as a system orchestrator framework</p>
+                <div class="connection-status">
+                    <span class="status-dot"></span>
+                    <span>Local Sandbox Active</span>
+                </div>
+            </footer>
+        </section>
+    </main>
+
+    <!-- Overlay Canvas for Spawning Animated Elements -->
+    <div id="animation-canvas" class="animation-canvas" aria-hidden="true"></div>
+
+    <!-- Logic Script -->
+    <script src="index.js"></script>
+</body>
+</html>
