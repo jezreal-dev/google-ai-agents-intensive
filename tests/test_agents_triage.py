@@ -17,3 +17,20 @@ def test_classify_alert_returns_required_keys():
     result = classify_alert({"level": "error", "title": "Unknown error", "stacktrace": "", "service": "api"})
     for key in ("severity", "affected_service", "summary"):
         assert key in result
+
+def test_classify_alert_with_none_values():
+    result = classify_alert({"level": None, "title": None, "stacktrace": None, "service": None})
+    assert result["severity"] == "SEV2"
+    assert result["affected_service"] == "unknown-service"
+    assert result["summary"] == "Unknown alert"
+    assert result["title"] == ""
+    assert result["original_level"] == "error"
+
+    # Also test missing fields
+    result_missing = classify_alert({})
+    assert result_missing["severity"] == "SEV2"
+    assert result_missing["affected_service"] == "unknown-service"
+    assert result_missing["summary"] == "Unknown alert"
+    assert result_missing["title"] == ""
+    assert result_missing["original_level"] == "error"
+
