@@ -2,7 +2,7 @@
 capstone/mcp_client.py
 ======================
 Unified MCP server interface for all SRE Triage Agent tool calls.
-Agent files must import from here — never make direct HTTP calls.
+Agent files must import from here - never make direct HTTP calls.
 
 Servers:
   - google-developer-knowledge (configured in mcp_config.json)
@@ -25,10 +25,11 @@ def query_developer_knowledge(query: str) -> str:
 
 def _call_github_mcp(repo: str, keywords: list[str]) -> list[dict]:
     """Simulate GitHub issue search. Replace with real github MCP in production."""
+    keyword = keywords[0] if keywords else "incident"
     return [{
-        "title": f"[SIMULATED] Past incident: {keywords[0]} in {repo}",
+        "title": f"[SIMULATED] Past incident: {keyword} in {repo}",
         "url": f"https://github.com/{repo}/issues/999",
-        "body": f"Resolved by restarting the {keywords[0]} service. Root cause: memory leak.",
+        "body": f"Resolved by restarting the {keyword} service. Root cause: memory leak.",
     }]
 
 def search_github_issues(repo: str, keywords: list[str]) -> list[dict]:
