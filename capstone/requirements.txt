@@ -1,0 +1,5 @@
+google-adk>=2.0
+google-generativeai
+python-dotenv
+pytest
+pytest-asyncio
