@@ -14,9 +14,9 @@ _KNOWN_SERVICES = ["payment-service", "reporting-service", "api", "auth-service"
 def classify_alert(alert: dict) -> dict:
     """Classify alert severity and extract key metadata."""
     start = time.monotonic()
-    level = (alert.get("level") or "error").lower()
+    level = str(alert.get("level") or "error").lower()
     severity = _LEVEL_TO_SEVERITY.get(level, "SEV2")
-    service = alert.get("service") or _extract_service(alert.get("title") or "")
+    service = alert.get("service") or _extract_service(str(alert.get("title") or ""))
     summary = _build_summary(alert)
     result = {"severity": severity, "affected_service": service, "summary": summary,
               "title": alert.get("title") or "", "original_level": level}
