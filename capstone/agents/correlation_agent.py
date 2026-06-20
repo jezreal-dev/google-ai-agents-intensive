@@ -15,8 +15,8 @@ def correlate(triage_result: dict) -> dict:
     service = triage_result["affected_service"]
     query = (f"Recommended procedure for a {triage_result['severity']} incident "
              f"on {service}. Context: {triage_result['summary']}")
-    runbook = query_developer_knowledge(query)
-    incidents = search_github_issues("my-org/sre-runbooks", [service, triage_result["severity"]])
+    runbook = query_developer_knowledge(query) or ""
+    incidents = search_github_issues("my-org/sre-runbooks", [service, triage_result["severity"]]) or []
     result = {"runbook_summary": runbook, "past_incidents": incidents,
               "service": service, "severity": triage_result["severity"]}
     log_span("correlation_agent.correlate", {"service": service},

@@ -1,4 +1,4 @@
-"""Tests for Correlation Agent — Gherkin scenario 3."""
+"""Tests for Correlation Agent - Gherkin scenario 3."""
 from unittest.mock import patch
 from capstone.agents.correlation_agent import correlate
 

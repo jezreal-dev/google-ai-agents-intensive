@@ -1,4 +1,4 @@
-"""Tests for Triage Agent — Gherkin scenarios 1 and 2."""
+"""Tests for Triage Agent - Gherkin scenarios 1 and 2."""
 from capstone.agents.triage_agent import classify_alert
 
 def test_fatal_alert_classified_as_sev1():

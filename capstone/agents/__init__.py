@@ -1,1 +1,1 @@
-"""SRE Triage Agent — specialist sub-agents."""
+"""SRE Triage Agent - specialist sub-agents."""
