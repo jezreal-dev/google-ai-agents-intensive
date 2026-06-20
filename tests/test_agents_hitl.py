@@ -20,3 +20,17 @@ def test_sev3_auto_approves_without_input():
     result = evaluate({"severity": "SEV3", "affected_service": "reporting-service"}, "scale up replicas by 1")
     assert result["human_required"] is False
     assert result["approved"] is True
+
+def test_hitl_threshold_severity_configuration():
+    # Test setting threshold to SEV1 (so SEV2 should auto-approve, human_required=False)
+    with patch("capstone.agents.hitl_gate.settings", {"hitl_threshold_severity": "SEV1"}):
+        result = evaluate({"severity": "SEV2", "affected_service": "payment-service"}, "restart")
+        assert result["human_required"] is False
+        assert result["approved"] is True
+
+    # Test setting threshold to SEV3 (so SEV3 should require human approval, human_required=True)
+    with patch("capstone.agents.hitl_gate.settings", {"hitl_threshold_severity": "SEV3"}):
+        with patch("builtins.input", return_value="y"):
+            result = evaluate({"severity": "SEV3", "affected_service": "reporting-service"}, "scale up")
+            assert result["human_required"] is True
+            assert result["approved"] is True

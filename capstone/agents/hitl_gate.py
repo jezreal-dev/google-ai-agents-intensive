@@ -8,21 +8,26 @@ RULE: This gate must NEVER be bypassed or auto-approved in production.
       Only patch builtins.input in automated tests.
 """
 import time
+from capstone.config import settings
 from capstone.telemetry import log_span
 
-_AUTO_APPROVE = {"SEV3"}
+_SEV_LEVELS = {"SEV1": 1, "SEV2": 2, "SEV3": 3}
 
 
 def evaluate(triage_result: dict, proposed_action: str) -> dict:
     """
     Evaluate whether a remediation requires human approval.
-    SEV1/SEV2 → blocks on input(). SEV3 → auto-approves.
+    SEV1/SEV2 -> blocks on input(). SEV3 -> auto-approves (configurable).
     Returns {human_required: bool, approved: bool, action: str, severity: str}
     """
     start = time.monotonic()
     severity = triage_result.get("severity", "SEV2")
     service = triage_result.get("affected_service", "unknown")
-    human_required = severity not in _AUTO_APPROVE
+    
+    threshold = settings.get("hitl_threshold_severity", "SEV2")
+    threshold_val = _SEV_LEVELS.get(threshold, 2)
+    severity_val = _SEV_LEVELS.get(severity, 2)
+    human_required = severity_val <= threshold_val
     approved = False
 
     if human_required:

@@ -31,17 +31,23 @@ circuit breakers for high-throughput batch operations.
 def draft_rca(correlation_result: dict, triage_result: dict) -> dict:
     """Draft an RCA from correlation + triage data. Returns {rca_draft: str}."""
     start = time.monotonic()
+    triage_result = triage_result or {}
+    service = triage_result.get("affected_service", "unknown-service")
+    severity = triage_result.get("severity", "SEV2")
+    title = triage_result.get("title", "Unknown alert")
+    summary = triage_result.get("summary", "No summary available")
+
     runbook = correlation_result.get("runbook_summary", "No runbook found.")
     incidents = correlation_result.get("past_incidents", [])
-    evidence = "\n".join(f"- [{i['title']}]({i['url']}): {i['body'][:100]}" for i in incidents) \
+    evidence = "\n".join(f"- [{i.get('title', 'Past incident')}]({i.get('url', '#')}): {i.get('body', '')[:100]}" for i in incidents) \
                or "No past incidents found."
     rca = _TEMPLATE.format(
-        service=triage_result["affected_service"], severity=triage_result["severity"],
-        title=triage_result["title"],
-        root_cause=f"{triage_result['summary']}. {runbook}",
+        service=service, severity=severity,
+        title=title,
+        root_cause=f"{summary}. {runbook}",
         evidence=evidence, recommended_action=runbook,
     )
     result = {"rca_draft": rca.strip()}
-    log_span("rca_agent.draft_rca", {"service": triage_result["affected_service"]},
+    log_span("rca_agent.draft_rca", {"service": service},
              {"rca_length": len(rca)}, (time.monotonic() - start) * 1000)
     return result

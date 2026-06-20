@@ -21,3 +21,14 @@ def test_slack_message_contains_severity_and_service():
     assert "SEV1" in result["slack_message"]
     assert "payment-service" in result["slack_message"]
     assert "Human approval required" in result["slack_message"]
+
+def test_rca_and_notifier_with_missing_keys():
+    # Test draft_rca with empty inputs
+    result_rca = draft_rca({}, {})
+    assert "rca_draft" in result_rca
+    assert "unknown-service" in result_rca["rca_draft"]
+
+    # Test format_slack_message with empty inputs
+    result_slack = format_slack_message({}, {})
+    assert "slack_message" in result_slack
+    assert "unknown-service" in result_slack["slack_message"]
