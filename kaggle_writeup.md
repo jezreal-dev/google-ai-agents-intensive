@@ -3,7 +3,7 @@
 **Track:** Track 2 — Agents for Business  
 **Author:** Jezreal Momoh  
 **GitHub Repository:** [google-ai-agents-intensive](https://github.com/jezreal-dev/google-ai-agents-intensive)  
-**Demo Video (YouTube):** *[Insert your YouTube Link here]*  
+**Demo Video (YouTube):** *[[vibecoding-agents-capstone-project](https://youtu.be/uWaN-KSvJZo)]*  
 
 ---
 
@@ -17,7 +17,7 @@ When a critical production alert fires at 2:00 AM, SRE (Site Reliability Enginee
 3.  Searching historical databases or GitHub issues to see if the issue is a known regression.
 4.  Investigating stack traces to draft a Root Cause Analysis (RCA) report.
 5.  Alerting the engineering team on Slack.
-6.  Proposing and executing remediation commands (e.g. restarting a Kubernetes deployment).
+6.  Proposing and executing remediation commands (e.g., restarting a Kubernetes deployment).
 
 This manual triage process typically takes **15 to 20 minutes** of critical coordination time. 
 
@@ -27,12 +27,12 @@ The **SRE Incident Triage Agent** solves this enterprise pain point by automatin
 
 ## 2. Why AI Agents?
 
-Traditional runbook automation relies on rigid, static scripts (e.g., if CPU > 90%, restart). These scripts fail to handle non-deterministic failure modes (like database locking, microservice memory leaks, or dependency drift) and have no capacity to understand context, write human-readable diagnostics, or look up unstructured historic documentation.
+Traditional runbook automation relies on rigid, static scripts (e.g., if CPU > 90%, restart). These scripts fail to handle non-deterministic failure modes (such as database locking, microservice memory leaks, or dependency drift) and lack the capacity to understand context, write human-readable diagnostics, or look up unstructured historical documentation.
 
 AI agents—specifically orchestrated multi-agent systems—bridge this gap:
 *   **Reasoning Capability:** They analyze unstructured raw traceback data to extract meaning and targets.
 *   **Dynamic Tool Calling:** They query developer documentation and search issues dynamically based on search terms they generate.
-*   **Synthesis:** They summarize complex debugging contexts to draft cohesive, human-readable RCA reports and team slack notifications.
+*   **Synthesis:** They summarize complex debugging contexts to draft cohesive, human-readable RCA reports and team Slack notifications.
 
 ---
 
@@ -62,7 +62,7 @@ The system uses the **ADK 2.0 Collaborative Teams** pattern. A central coordinat
 
 ### Specialist Sub-Agent Directory
 1.  **Triage Agent (capstone/agents/triage_agent.py):** Parses raw Sentry payloads. It extracts metadata, maps log levels (`error`, `warning`) to standard severities (`SEV1`-`SEV3`), and identifies target service keywords.
-2.  **Correlation Agent (capstone/agents/correlation_agent.py):** Connects to external systems via MCP. It pulls Google Cloud troubleshooting documentation and scans past closed issues in GitHub to find matching historic incident data.
+2.  **Correlation Agent (capstone/agents/correlation_agent.py):** Connects to external systems via MCP. It pulls Google Cloud troubleshooting documentation and scans past closed GitHub issues to find matching historical incident data.
 3.  **RCA Agent (capstone/agents/rca_agent.py):** Merges the traceback facts with the correlation context to write a structured, markdown-formatted Root Cause Analysis report.
 4.  **Notifier Agent (capstone/agents/notifier_agent.py):** Formats the diagnostic results into a Slack notification template for direct team consumption.
 5.  **HITL Gate Agent (capstone/agents/hitl_gate.py):** Enforces security guardrails. Evaluates settings and halts execution to prompt the console operator (`y/n`) for approval on any SEV1/SEV2 remediation.
