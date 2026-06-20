@@ -112,18 +112,18 @@ Track the completion status of all daily assignments, codelabs, and the capstone
 
 ### Track Selection *(choose one)*
 - [ ] **Track 1 — Agents for Good:** Societal challenges (education, healthcare, agriculture, arts)
-- [ ] **Track 2 — Agents for Business:** Enterprise problems (expense management, pipeline optimization)
+- [x] **Track 2 — Agents for Business:** Enterprise problems (SRE Incident Triage Agent)
 - [ ] **Track 3 — Concierge Agents:** Personal assistants (planning, task management, user data security)
 - [ ] **Track 4 — Freestyle:** Niche, creative, or experimental
 
 ### Requirements *(demonstrate at least 3)*
-- [ ] Multi-agent systems built with Agent Development Kit (ADK)
-- [ ] Model Context Protocol (MCP) server integration
-- [ ] Agent skills (`SKILL.md` with progressive disclosure)
-- [ ] Security features (HITL, automated scans, sandboxing)
+- [x] Multi-agent systems built with Agent Development Kit (ADK)
+- [x] Model Context Protocol (MCP) server integration
+- [x] Agent skills (`SKILL.md` with progressive disclosure)
+- [x] Security features (HITL, automated scans, sandboxing)
 
 ### Deliverables
-- [ ] Working autonomous agent
-- [ ] Video walkthrough and project summary write-up
-- [ ] Public GitHub repository with clean documentation
-- [ ] Submit on Kaggle
+- [x] Working autonomous agent
+- [x] Video walkthrough and project summary write-up (Kaggle submission preparation complete)
+- [x] Public GitHub repository with clean documentation
+- [x] Submit on Kaggle

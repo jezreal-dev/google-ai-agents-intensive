@@ -16,7 +16,7 @@ A hands-on portfolio documenting all study notes, daily assignments, working cod
 | **Day 3** | Agent Skills & Memory | [`day3_notes.md`](notes/day3_notes.md) · [`SKILL.md`](.agents/skills/hello-world-skill/SKILL.md) |
 | **Day 4** | Security & Evaluation | [`day4_notes.md`](notes/day4_notes.md) · [`expense_agent.py`](scripts/expense_agent.py) · [`security_scan.py`](scripts/security_scan.py) |
 | **Day 5** | Spec-Driven Production Development | [`day5_notes.md`](notes/day5_notes.md) · [`cloud_run_deploy.sh`](scripts/cloud_run_deploy.sh) · [`expense_agent.feature`](scripts/expense_agent.feature) |
-| **🏆 Capstone** | Autonomous Agent Project | In development — deadline **July 6, 2026** |
+| **🏆 Capstone** | SRE Incident Triage Agent | [`capstone/`](capstone/) · [`capstone/ARCHITECTURE.md`](capstone/ARCHITECTURE.md) |
 
 ---
 
@@ -32,6 +32,20 @@ google-ai-agents-intensive/
 │   └── skills/
 │       └── hello-world-skill/
 │           └── SKILL.md            # Day 3: Local declarative agent skill definition
+│
+├── capstone/                       # 🏆 Capstone Project: Multi-Agent Triage System
+│   ├── agents/                     # Specialist sub-agents
+│   │   ├── triage_agent.py         # 1. Classification & service extraction
+│   │   ├── correlation_agent.py    # 2. Runbook & incident search
+│   │   ├── rca_agent.py            # 3. Root Cause Analysis documentation
+│   │   ├── notifier_agent.py       # 4. Slack notification template formatter
+│   │   └── hitl_gate.py            # 5. Human-in-the-loop validation gate
+│   ├── ARCHITECTURE.md             # Technical design & agent topology
+│   ├── config.py                   # Central settings loader (API models, thresholds)
+│   ├── coordinator.py              # Orchestration layer
+│   ├── mcp_client.py               # Google Dev Knowledge, GitHub, Sentry wrapper
+│   ├── pipeline.py                 # Pipeline entrypoint execution runner
+│   └── telemetry.py                # Mock OpenTelemetry observability span logger
 │
 ├── docs/
 │   └── cli_usage.md                # Antigravity CLI (agy) & agentapi usage guide
@@ -51,7 +65,17 @@ google-ai-agents-intensive/
 │   ├── observability_logger.py     # Day 5: OpenTelemetry-style telemetry logger
 │   ├── run_sdd_tests.py            # Day 5: Gherkin SDD test runner
 │   ├── security_scan.py            # Day 4: Credential leak pre-commit scanner
-│   └── sre_triage_agent.py         # Capstone: SRE auto-triage agent skeleton
+│   └── sre_triage_agent.py         # Study exercises: SRE incident triage skeleton
+│
+├── tests/                          # 🧪 Automated Test Suite (25 passing tests)
+│   ├── test_agents_correlation.py  # Unit tests for Correlation specialist
+│   ├── test_agents_hitl.py         # Unit tests for HITL safety gate
+│   ├── test_agents_rca.py          # Unit tests for RCA & Slack notification formats
+│   ├── test_agents_triage.py       # Unit tests for Severity Triage
+│   ├── test_config.py              # Settings validation test cases
+│   ├── test_mcp_client.py          # Simulated MCP server client test cases
+│   ├── test_pipeline.py            # E2E pipeline integration scenarios
+│   └── test_telemetry.py           # Telemetry span safety validation
 │
 ├── .gitignore                      # Python, OS, and IDE artifact exclusions
 ├── README.md                       # Course overview & portfolio index (this file)
@@ -123,6 +147,25 @@ Expected output:
 ```bash
 python scripts/security_scan.py
 # Also runs automatically as a git pre-commit hook
+```
+
+### 5. Run the Capstone SRE Incident Triage Agent
+
+Start the multi-agent incident orchestration pipeline runner:
+
+```bash
+python -m capstone.pipeline FAKE-EVENT-ID-001
+```
+
+*   When prompted `Approve this remediation? (y/n):` — type `y` to approve or `n` to reject.
+*   To bypass the interactive HITL prompt for testing, you can modify `hitl_threshold_severity` in environment settings or pipe a simulated response: `echo "y" | python -m capstone.pipeline FAKE-EVENT-ID-001`
+
+### 6. Run the Full Automated Test Suite
+
+To run all 25 unit and integration tests across config, MCP wrapper, and agents:
+
+```bash
+python -m pytest -v
 ```
 
 ---
