@@ -7,7 +7,7 @@ In production this calls the Slack MCP server.
 import time
 from capstone.telemetry import log_span
 
-_TEMPLATE = """🚨 *{severity} INCIDENT — {service}*
+_TEMPLATE = """[ALERT] *{severity} INCIDENT - {service}*
 
 *Summary:* {summary}
 

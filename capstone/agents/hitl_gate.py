@@ -32,7 +32,7 @@ def evaluate(triage_result: dict, proposed_action: str) -> dict:
 
     if human_required:
         print(f"\n{'='*60}")
-        print(f"[!] HITL GATE — {severity} incident on {service}")
+        print(f"[!] HITL GATE - {severity} incident on {service}")
         print(f"[!] Proposed action: {proposed_action}")
         print(f"{'='*60}")
         response = input("Approve this remediation? (y/n): ").strip().lower()
