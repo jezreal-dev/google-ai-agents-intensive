@@ -1,4 +1,4 @@
-"""End-to-end pipeline test — Gherkin scenario 8."""
+"""End-to-end pipeline test - Gherkin scenario 8."""
 from unittest.mock import patch
 from capstone.pipeline import run_pipeline
 
@@ -9,7 +9,12 @@ def test_full_pipeline_returns_complete_incident_card():
                return_value=[{"title": "Past OOM", "url": "https://x", "body": "Fixed by restart"}]), \
          patch("builtins.input", return_value="y"):
         result = run_pipeline("FAKE-EVENT-ID-001")
-    for key in ("severity", "rca_draft", "slack_message", "human_required"):
+    required_keys = (
+        "severity", "affected_service", "summary", "runbook_summary",
+        "past_incidents", "rca_draft", "slack_message", "human_required",
+        "remediation_approved", "proposed_action"
+    )
+    for key in required_keys:
         assert key in result
 
 def test_full_pipeline_sev1_requires_human():

@@ -40,7 +40,7 @@ def evaluate(triage_result: dict, proposed_action: str) -> dict:
         print(f"[{'+'if approved else '!'}] Remediation {'APPROVED' if approved else 'REJECTED'}.")
     else:
         approved = True
-        print(f"[*] {severity} — auto-approved: {proposed_action}")
+        print(f"[*] {severity} - auto-approved: {proposed_action}")
 
     result = {"human_required": human_required, "approved": approved,
               "action": proposed_action, "severity": severity}
