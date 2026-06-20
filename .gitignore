@@ -24,3 +24,8 @@ Thumbs.db
 
 # Logs
 *.log
+
+# System/Testing
+.pytest_cache/
+.superpowers/
+
