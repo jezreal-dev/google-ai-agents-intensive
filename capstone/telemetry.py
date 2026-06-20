@@ -20,7 +20,7 @@ except ImportError:
 
 
 def log_span(operation: str, inputs: dict, outputs: dict, duration_ms: float) -> dict:
-    """Log a telemetry span. Never raises — telemetry must not crash the agent."""
+    """Log a telemetry span. Never raises - telemetry must not crash the agent."""
     span = {
         "span_id": str(uuid.uuid4())[:8],
         "operation": operation,

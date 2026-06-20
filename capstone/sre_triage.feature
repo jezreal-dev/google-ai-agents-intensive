@@ -1,5 +1,5 @@
 # capstone/sre_triage.feature
-# SRE Incident Triage Agent — Behavioral Specification
+# SRE Incident Triage Agent - Behavioral Specification
 # Source of truth: agents must satisfy these scenarios, not the other way around.
 
 Feature: SRE Incident Triage Multi-Agent Pipeline
