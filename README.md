@@ -183,4 +183,4 @@ python -m pytest -v
 
 ## 📄 License
 
-This repository is a personal learning portfolio. All course materials, whitepapers, and codelabs are the property of Google and Kaggle.
+This repository is licensed under the [MIT License](LICENSE). All course materials, whitepapers, and codelabs remain the copyright and property of Google and Kaggle.
